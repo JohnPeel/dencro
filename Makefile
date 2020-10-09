@@ -1,7 +1,8 @@
 run:
 	deno \
-		--importmap=import_map.json \
 		--allow-net \
 		--allow-read \
-		index.ts \
+		--allow-env \
+		src/index.ts \
 		example
+		--tag
